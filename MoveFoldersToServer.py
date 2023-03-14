@@ -24,30 +24,21 @@ def MoveFiles(source, destination):
 
 #Where the system will move the files from and to
 #PATH 1
-sourcesocialmedia = 'socialmediatemp/'
-destinationsocialmedia = '/Volumes/Media/Social Media/2023/3.TO BE ORGANISED/'
-#PATH 2
-sourceprocessed = 'processed/'
-destinationprocessed = '/Volumes/Customers/Automated-video-system-backup-multistream/'
+source = 'foldername/'
+destination = '/Volumes/.../.../'
 
 #Base folder to start copying files
-os.chdir('/Users/bigmac/Documents/GitHub/V152/VideoGenerator/data/samples/input/')
+os.chdir('/Users/.../.../.../')
 
-MoveFiles(sourcesocialmedia, destinationsocialmedia)
-MoveFiles(sourceprocessed, destinationprocessed)
-
+MoveFiles(source, destination)
 
 #INSTRUCTIONS TO USE AUTO SCHEDULE WITH CRONTAB (MACOS)
+#########
 #Open Terminal
 #Type: crontab -e
-#press i to start editing and add the following
-#50 7 * * * /usr/local/bin/python3 /Users/bigmac/Documents/GitHub/Moving\ Files\ to\ Server/MovingFilesPython/MoveFoldersToServer.py
-#press esc
-#type this to save :wq
-#########
-#crontab -l (Will list all scheduled jobs)
 #Here is a command that creates a text file to test it
 #37 10 * * * echo Miller text file > /Users/bigmac/Documents/GitHub/Moving\ Files\ to\ Server/MovingFilesPython/myfile.txt
-##############
-#Running Media Generator Automatically
-##0 8 * * * /usr/local/bin/python3 /Users/bigmac/Documents/GitHub/AutomaticVideoEditing/main.py 
+#press esc
+#type this to save :wq
+
+#crontab -l (Will list all scheduled jobs)
